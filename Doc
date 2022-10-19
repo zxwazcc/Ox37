@@ -26,6 +26,7 @@ w1:Toggle(
     "Call Back (IMPORTANT)",
     false,
     function(toggled)
+        (code) = toggled
     end
 )
 
