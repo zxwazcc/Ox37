@@ -1,0 +1,42 @@
+local library = loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/0x"))() -- Main Module
+
+-- Window
+local w1 = library:Window("Text Here")
+
+-- Button
+w1:Button(
+    "Text Here",
+    function()
+    end
+)
+
+-- Slider
+w1:Slider(
+    "Text Here",
+    "Call Back (IMPORTANT)",
+    Min,
+    Max,
+    function(value)
+    end
+)
+
+-- Toggle
+w1:Toggle(
+    "Text Here",
+    "Call Back (IMPORTANT)",
+    false,
+    function(toggled)
+    end
+)
+
+-- Destroy UI
+w1:Button(
+    "Destroy GUI",
+    function()
+        for i, v in pairs(game.CoreGui:GetChildren()) do
+            if v:FindFirstChild("Top") then
+                v:Destroy()
+            end
+        end
+    end
+)
